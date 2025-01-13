@@ -1,5 +1,3 @@
-import { graphql } from "react-relay";
-
 const MeQuery = graphql`
   query MeQuery {
     me {
@@ -8,6 +6,3 @@ const MeQuery = graphql`
     }
   }
 `;
-
-console.log(MeQuery);
-
