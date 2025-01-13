@@ -1,0 +1,15 @@
+{
+  "name": "babel-relay-eagerEsModules-bug",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:single": "cp relay.config.single.json relay.config.json && babel src --out-dir dist/single",
+    "build:multi": "cp relay.config.multi.json relay.config.json && babel src --out-dir dist/multi"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "babel-plugin-relay": "^15.0.0"
+  }
+}
