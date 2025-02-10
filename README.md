@@ -20,7 +20,7 @@ var MeQuery =
 
 ## Expected behavior
 
-Just like it does with a single-project Relay config, `babel-plugin-relay` should transform `graphql` tagged templates into import declarations, like this:
+Just like it does with a single-project Relay config, `babel-plugin-relay` should transform `graphql` tagged templates into import declarations when `"eagerEsModules": true` is set, like this:
 
 ```js
 import _MeQuery from "../__generated__/MeQuery.graphql";
@@ -35,7 +35,7 @@ var MeQuery =
 
 ## Reproducing the bug
 
-I included the dist file in this repo, but if you want to reproduce the bug yourself, here are the steps:
+I included the dist files in this repo, but if you want to reproduce the bug yourself, here are the steps:
 
 1. Clone the repo.
 
